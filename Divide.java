@@ -17,4 +17,8 @@ public class Divide extends Binop {
     public String toString() {
         return "(" + lChild + " / " + rChild + ")";
     }
+    @Override
+    public Node copy() {
+    return new Divide(lChild.copy(), rChild.copy());
+}
 }
