@@ -13,4 +13,8 @@ public class Mult extends Binop {
     public String toString() {
         return "(" + lChild + " * " + rChild + ")";
     }
+    @Override
+    public Node copy() {
+    return new Mult(lChild.copy(), rChild.copy());
+}
 }
