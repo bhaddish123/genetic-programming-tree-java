@@ -20,4 +20,8 @@ public class Const extends Node {
     public String toString() {
         return Double.toString(value);
     }
+    @Override
+    public Node copy() {
+    return new Const(value);
+}
 }
