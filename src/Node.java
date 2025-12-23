@@ -6,4 +6,6 @@ public abstract class Node {
     // Allow this node to be visited during a tree traversal
     public abstract void traverse(Collector c);
 
+    // Create a copy of this node
+    public abstract Node copy();
 }
