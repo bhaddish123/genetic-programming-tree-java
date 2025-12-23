@@ -20,4 +20,8 @@ public class Variable extends Node {
     public String toString() {
         return "x" + index;
     }
+    @Override
+    public Node copy() {
+    return new Variable(index);
+}
 }
