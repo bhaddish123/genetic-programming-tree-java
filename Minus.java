@@ -13,4 +13,8 @@ public class Minus extends Binop {
     public String toString() {
         return "(" + lChild + " - " + rChild + ")";
     }
+    @Override
+    public Node copy() {
+    return new Minus(lChild.copy(), rChild.copy());
+}
 }
