@@ -13,4 +13,8 @@ public class Plus extends Binop {
     public String toString() {
         return "(" + lChild + " + " + rChild + ")";
     }
+    @Override
+    public Node copy() {
+    return new Plus(lChild.copy(), rChild.copy());
+}
 }
