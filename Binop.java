@@ -15,4 +15,6 @@ public abstract class Binop extends Node {
         lChild.traverse(c);
         rChild.traverse(c);
     }
+    @Override
+    public abstract Node copy();
 }
