@@ -8,4 +8,12 @@ public abstract class Node {
 
     // Create a copy of this node
     public abstract Node copy();
+
+    
+    public abstract void addRandomKids(
+        OperatorFactory o,
+        TerminalFactory t,
+        int maxDepth,
+        java.util.Random rand
+);
 }

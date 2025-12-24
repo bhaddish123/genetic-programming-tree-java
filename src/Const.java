@@ -24,4 +24,11 @@ public class Const extends Node {
     public Node copy() {
     return new Const(value);
 }
+@Override
+public void addRandomKids(OperatorFactory o,
+                          TerminalFactory t,
+                          int maxDepth,
+                          java.util.Random rand) {
+    // leaf node — nothing to add
+}
 }

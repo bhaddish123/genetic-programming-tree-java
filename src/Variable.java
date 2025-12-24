@@ -24,4 +24,11 @@ public class Variable extends Node {
     public Node copy() {
     return new Variable(index);
 }
+@Override
+public void addRandomKids(OperatorFactory o,
+                          TerminalFactory t,
+                          int maxDepth,
+                          java.util.Random rand) {
+    // leaf node — nothing to add
+}
 }

@@ -5,7 +5,7 @@ public class GPTree implements Collector {
 
     private Node root;
     private ArrayList<Binop> crossNodes;
-
+    
     /**
      * Collect nodes during traversal.
      * Only Binop nodes are stored for crossover.
@@ -15,7 +15,7 @@ public class GPTree implements Collector {
             crossNodes.add((Binop) node);
         }
     }
-
+    
     /**
      * Initializes the list and traverses the tree.
      */
@@ -23,7 +23,7 @@ public class GPTree implements Collector {
         crossNodes = new ArrayList<>();
         root.traverse(this);
     }
-
+    
     /**
      * Returns all crossover nodes as a string.
      */
