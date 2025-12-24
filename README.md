@@ -23,3 +23,9 @@ The included TestGPTree class demonstrates:
 - Random tree generation
 - Expression evaluation
 - Genetic crossover between trees
+
+## How to Run
+
+```bash
+javac src/*.java
+java -cp src TestGPTree
